@@ -1,8 +1,8 @@
 let login = (event) => {
 	event.preventDefault();
 	let jsonString = {
-		'userName':$('input[name=userName]').val(),
-		'password':$('input[name=password]').val()
+		'userName': $('input[name=userName]').val(),
+		'password': $('input[name=password]').val()
 	};
 	
 	$.ajax({

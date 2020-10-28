@@ -14,7 +14,6 @@ import com.google.gson.Gson;
 
 import jp.co.internous.ecsite.model.dao.GoodsRepository;
 import jp.co.internous.ecsite.model.dao.UserRepository;
-import jp.co.internous.ecsite.model.dto.LoginDto;
 import jp.co.internous.ecsite.model.entity.Goods;
 import jp.co.internous.ecsite.model.entity.User;
 import jp.co.internous.ecsite.model.form.GoodsForm;
