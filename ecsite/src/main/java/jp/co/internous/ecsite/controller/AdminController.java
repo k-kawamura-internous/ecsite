@@ -70,7 +70,7 @@ public class AdminController {
 	}
 	
 	@RequestMapping("/addGoods")
-	public String addGoods(GoodsForm goodsForm, LoginForm loginForm, Model m) {
+	public String addGoods(GoodsForm goodsForm, LoginForm loginForm, Model m) {		
 		m.addAttribute("userName", loginForm.getUserName());
 		m.addAttribute("password", loginForm.getPassword());
 		Goods goods = new Goods();
