@@ -3,12 +3,15 @@ package jp.co.internous.ecsite.model.dao;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 import jp.co.internous.ecsite.model.entity.User;
-
-
-@Repository
 public interface UserRepository extends JpaRepository<User, Long> {
 	List<User> findByUserNameAndPassword(String userName, String password);
+	// usernameを探すために追加
+	@Query(value="SELECT count(id) FROM user WHERE user_name = :userName",
+			nativeQuery=true)
+	int findCountByUserName(@Param("userName") String userName);
+
 }
