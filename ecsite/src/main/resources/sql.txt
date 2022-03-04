@@ -40,8 +40,8 @@ INSERT INTO user
 VALUES ('ichiko', 'ichikopw', 'Ichiko Hayashi');
 INSERT INTO user
 (user_name, password, full_name, is_admin)
-VALUES ('admin', 'admin', 'ŠÇ—Ò ‘¾˜Y', 1);
+VALUES ('admin', 'admin', 'ç®¡ç†è€… å¤ªéƒ', 1);
 
-INSERT INTO goods (goods_name, price) VALUES('TƒVƒƒƒc', 1000);
-INSERT INTO goods (goods_name, price) VALUES('ƒWƒƒƒPƒbƒg', 10000);
-INSERT INTO goods (goods_name, price) VALUES('ƒXƒj[ƒJ[', 5000);
+INSERT INTO goods (goods_name, price) VALUES('Tã‚·ãƒ£ãƒ„', 1000);
+INSERT INTO goods (goods_name, price) VALUES('ã‚¸ãƒ£ã‚±ãƒƒãƒˆ', 10000);
+INSERT INTO goods (goods_name, price) VALUES('ã‚¹ãƒ‹ãƒ¼ã‚«ãƒ¼', 5000);
