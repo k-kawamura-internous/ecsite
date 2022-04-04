@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.google.gson.Gson;
-
 import jp.co.internous.ecsite.model.dao.GoodsRepository;
 import jp.co.internous.ecsite.model.dao.UserRepository;
 import jp.co.internous.ecsite.model.entity.Goods;
@@ -28,7 +26,6 @@ public class AdminController {
 	@Autowired
 	private GoodsRepository goodsRepos;
 	
-	private Gson gson = new Gson();
 	
 	@RequestMapping("/")
 	public String index() {
