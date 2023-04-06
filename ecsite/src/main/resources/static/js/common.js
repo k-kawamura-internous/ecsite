@@ -4,7 +4,6 @@ let login = (event) => {
 		'userName': $('input[name=userName]').val(),
 		'password': $('input[name=password]').val()
 	};
-	
 	$.ajax({
 		type: 'POST',
 		url: '/ecsite/api/login',
